@@ -1,0 +1,477 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "style.css" />
+    
+    <style>
+    
+     
+ 
+        
+/***********SPECIFICATIONS*******************/
+         .container {
+	background-color:  #FF4B2B;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	width: 80%;
+	min-height: 80px;
+            margin-top:50px;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10%;
+             color:white;
+             opacity:0.8;
+             transition:1s;
+           
+}
+        
+        .container:hover
+        {
+opacity:1;
+        transition:1s;
+        width:90%;}
+/************************************************/
+        
+/******************Container Backgorunds************/
+        
+               .container_2 {
+	background-image:url(covers/cover.jpg);
+                   background-size:contain;
+	border-radius: 100px;
+                   border-top-left-radius: 0px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	width: 100%;
+	min-height: 80px;
+            margin-top:0px;
+            justify-content: center;
+            align-items: center;
+             color:white;
+                   
+        }
+/************************************************/
+        
+        
+/************************Heading Background********/
+    .container_3 {
+             background-color:black ;
+                 border-radius: 100px;
+             border-bottom-left-radius: 0px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	width: 50%;
+	min-height: 80px;
+            margin-top:50px;
+             
+            justify-content: center;
+            align-items: center;
+             color:white;
+             opacity:0.8;
+        }
+/**************************************************/
+    
+/*********************BODY***********************/
+        body
+        { background-color:aliceblue;
+              background-repeat: no-repeat;
+        background-size:100% 100%;
+        background-attachment: fixed;}
+     h2
+        {
+font-family: cursive;
+    font-stretch: semi-condensed;
+        font-size: 40px;}  
+        
+       h3
+        {color:black;
+font-family: cursive;
+    font-stretch: semi-condensed;
+        font-size: 20px;} 
+        
+        p::footer
+    {
+        font-size: 15px;
+    margin-top:0;
+    font-family: cursive}
+/**************************************************/
+  </style>
+    </head>
+    
+<body background="society/3.jpg">
+    
+    
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li class="dropdown">
+     <a href="javascript:void(0)" class="dropbtn">Overview: </a>
+    <div class="dropdown-content">
+      <a href="plans.html">Plans</a>
+      <a href="facilities.html">Facilities</a>
+    </div>
+  <li><a href="contact.html">Contact</a></li>
+    <li class="dropdown">
+     <a href="javascript:void(0)" class="dropbtn">Events: </a>
+    <div class="dropdown-content">
+      <a href="celebrations.html">Celebrations</a>
+      <a href="meetings.html">Meetings</a>
+      <a href="announcements.html">Announcements</a>
+    </div>
+    <li><a href="gallery.html"> Gallery</a></li>
+    <li class="dropdown">
+     <a href="javascript:void(0)" class="dropbtn">Services: </a>
+    <div class="dropdown-content">
+      <a href="#">Pay bills</a>
+      <a href="#">Register Complain</a>
+      <a href="#">Directory</a>
+    </div>
+  <li style="float:right"><a class="active" href="login.html">Login</a></li>
+</ul>
+    
+    
+  <div class="heading">          
+<p align="center"> Plans </p>
+            </div>
+            
+           
+            
+<br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class=container_3>
+    <h2 align="center">Floor Plans</h2>
+    </div>
+    <div class="container_2">
+    <div class="responsive">
+  <div class="gallery">
+      <img src="plans/plan1bhk_4.jpg"width="500" height="400" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    <div class="desc">1-BHK  560sq.ft</div>
+  </div>
+</div>
+            
+        <div class="responsive">
+  <div class="gallery">
+      <img src="plans/plan1bhk_1.jpeg" width="500" height="400" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    <div class="desc">1-BHK  660sq.ft</div>
+  </div>
+</div>
+            
+      <div class="responsive">
+  <div class="gallery">
+      <img src="plans/plan1bhk_2.jpg"  width="500" height="400" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    <div class="desc">1-BHK  760sq.ft
+        </div>
+  </div>
+</div>
+            
+         
+      <div class="responsive">
+  <div class="gallery">
+      <img src="plans/plan1bhk_3.jpg" width="500" height="400" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    <div class="desc">1-BHK  860sq.ft
+        </div>
+  </div>
+</div>
+
+      
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="plans/plan2bhk_3.jpg" width="600" height="400" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+    <div class="desc">2-BHK  795sq.ft</div>
+  </div>
+</div>
+            
+<div class="responsive">
+  <div class="gallery">
+    <img src="plans/plan2bhk_2.png"  width="600" height="400" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+    <div class="desc">2-BHK  895sq.ft</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="plans/plan2bhk_1.jpg" width="600" height="400" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+    <div class="desc">2-BHK  995sq.ft</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="plans/plan2bhk_4.jpg"width="600" height="400" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+    <div class="desc">2-BHK 1095sq.ft</div>
+  </div>
+</div>
+            
+<div class="responsive">
+  <div class="gallery">
+      <img src="plans/plan3bhk_1.jpg" width="600" height="400" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+    <div class="desc">3-BHK 1195sq.ft</div>
+  </div>
+</div>
+
+            <div class="responsive">
+  <div class="gallery">
+      <img src="plans/plan3bhk_2.jpg" width="600" height="400" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+    <div class="desc">3-BHK 1395sq.ft</div>
+  </div>
+</div>
+
+            <div class="responsive">
+  <div class="gallery">
+      <img src="plans/plan3bhk_3.jpg" width="600" height="400" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+    <div class="desc">3-BHK 1795sq.ft</div>
+  </div>
+</div>
+            
+            <div class="responsive">
+  <div class="gallery">
+      <img src="plans/plan3bhk_4.jpg" width="600" height="400" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+    <div class="desc">3-BHK 2095sq.ft</div>
+  </div>
+</div> 
+            </div>
+    <br><br>
+            <div class="container_3">
+<h2 align="center">Specifications</h2> 
+            </div>
+    <div class="container_2">
+          <div class="container" id="container">
+            <h3> Rooms</h3>
+            <p> Internal Wall and Ceiling Painted with Acrrylic Emulsion Plastic Paint,with UPVC external Balcony Door and 600*600mm Vitrified Floor Tiles. </p></div>
+     <div class="container" id="container">
+            <h3> Kitchen</h3>
+            <p> Strainless Steel Sink and vitrfied floor tiles with granite top on working platform.Modular Cabinet with laminated Fitting and branded RO Water Purifier.</p></div>
+            
+            <div class="container" id="container">
+                <h3> Woodwork</h3>
+            <p> Ply Board / MDF 18mm sunmica cupboards in bedroom. Accessories : Hinges, hettich or Equivalent. 305mm high Handle, Telescope Channel 457.20mm.
+                </p>
+            </div>
+            <div class="container" id="container">
+            <h3> Height</h3>
+            <p> Finished Floor Level to Finished Floor Level - 10' - 2" (3100 mm) .
+
+Bottom of Slab to Finished Floor Level - 9' - 6" (2900 mm).</p></div>
+            <div class="container" id="container">
+            <h3> Video Door Phone</h3>
+            <p> Make : Crystal, Zycon or Equivalent.</p></div>
+            
+            <div class="container" id="container">
+            <h3> Electrical Fittings</h3>
+            <p> Modular Switches & Sockets : Philips or Equivalent. MCB : Standard manufactured by Havells, Mistubishi or Equivalent.</p></div>
+            
+            <div class="container" id="container">
+            <h3> Fire Fighting</h3>
+            <p> Sprinkler, Smoke/Heat detector in each flat. Make : Newage, HD, Tycon or Equivalent. Exposed fire pipes with enamel paint.</p></div>
+            
+            </div>
+            <div class="container_3">
+      <h2 align="center">Price Plan</h2>
+            </div>
+          <div class="container_2">
+            </div>
+            <br><br><br>
+            
+        <div class="stylefoot">
+        <div class="column">
+        <img src="logo.jpg" height=90px width=90px align="center">
+          <p id="footer"> The Group is more than just a name in the Indian real estate market. While it connotes aspiration & growth for an individual, it is also the fulfilment of lifelong dreams for a family.
+              </p>
+     
+      </div>
+      <div class="column"></div>
+      <div class="column">
+      <h4>Contact Info</h4>
+          <p>Corporate Office / Site Sales, Vaibhav Khand, Indirapuram, Ghaziabad - 201014, UP</p>
+          <br>
+          
+      </div>
+
+      <div class="column">
+          <br>
+            <a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+            <br>
+            <a href="#" class="fa fa-linkedin"></a>
+<a  href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a>
+            </div>
+    
+
+
+<div class="clearfix"></div>
+            
+        <div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 12</div>
+      <img src="plans/plan1bhk_4.jpg" style="width:100%">
+        <div class="caption-container">
+      <p id="caption"> 1-BHK 560sq.ft (1B+1K+1T)</p>
+    </div>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 12</div>
+      <img src="plans/plan1bhk_1.jpeg" style="width:100%">
+        <div class="caption-container">
+      <p id="caption"> 1-BHK 660sq.ft(1B+1K+1T)</p>
+    </div>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 12</div>
+      <img src="plans/plan1bhk_2.jpg" style="width:100%">
+        <div class="caption-container">
+      <p id="caption"> 1-BHK 760sq.ft(1B+1K+1T+1WASHAREA)</p>
+    </div>
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 12</div>
+      <img src="plans/plan1bhk_3.jpg" style="width:100%">
+        <div class="caption-container">
+      <p id="caption"> 1-BHK 860sq.ft(1B+1K+1T)</p>
+    </div>
+    </div>
+      
+       <div class="mySlides">
+      <div class="numbertext">5 / 12</div>
+      <img src="plans/plan2bhk_3.jpg" style="width:100%">
+           <div class="caption-container">
+      <p id="caption"> 2-BHK 795sq.ft(2B+1K+2T)</p>
+    </div>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 12</div>
+      <img src="plans/plan2bhk_2.png" style="width:100%">
+        <div class="caption-container">
+      <p id="caption"> 2-BHK 895sq.ft(2B+1K+2T)</p>
+    </div>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 12</div>
+      <img src="plans/plan2bhk_1.jpg" style="width:100%">
+        <div class="caption-container">
+      <p id="caption"> 2-BHK 995sq.ft(2B+1K+2T+WASHAREA)</p>
+    </div>
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">8 / 12</div>
+      <img src="plans/plan2bhk_4.jpg" style="width:100%">
+        <div class="caption-container">
+      <p id="caption"> 2-BHK 1095sq.ft(2B+1K+2T+DINING)</p>
+    </div>
+    </div>
+    
+      <div class="mySlides">
+      <div class="numbertext">9 / 12</div>
+      <img src="plans/plan3bhk_1.jpg" style="width:100%">
+        <div class="caption-container">
+      <p id="caption"> 3-BHK 1195sq.ft(3B+1K+3T)</p>
+    </div>
+    </div>
+      
+      <div class="mySlides">
+      <div class="numbertext">10 / 12</div>
+      <img src="plans/plan3bhk_2.jpg" style="width:100%">
+        <div class="caption-container">
+      <p id="caption"> 3-BHK 1395sq.ft(3B+1K+3T)</p>
+    </div>
+    </div>
+      
+      <div class="mySlides">
+      <div class="numbertext">11 / 12</div>
+      <img src="plans/plan3bhk_3.jpg" style="width:100%">
+        <div class="caption-container">
+      <p id="caption"> 3-BHK 1795sq.ft(3B+1K+3T+DINING+)</p>
+    </div>
+    </div>
+      
+      <div class="mySlides">
+      <div class="numbertext">12 / 12</div>
+      <img src="plans/plan3bhk_4.jpg" style="width:100%">
+        <div class="caption-container">
+      <p id="caption"> 3-BHK 2095sq.ft(3B+1K+3T+Dining+Store)</p>
+    </div>
+    </div>
+      
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"> </p>
+    </div>
+      
+        <div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+   
+            </div>
+            
+           
+      
+      <script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+            </script>
+            
+            
+                          
+</body>
+</html>

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+    img.slides{
+        width : 100%;
+        height : 300px;
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    #slider{
+        width : 98%;
+        height : 100%;
+        margin : 20px auto;
+        position : relative;
+        
+    }
+    button{
+        padding : 2px;
+        border : none;
+        font-size : 30px;
+        color : black;
+        position : absolute;
+        top:45%;
+        cursor: pointer;
+    }
+    .next{
+        border-radius: 5px 0px 0px 5px;
+        margin-left: 700px;
+    }
+    .prew{
+        border-radius: 0px 5px 5px 0px; 
+    }
+</style>
+<style>
+    
+   
+/* ********************NAVIGATION  BAR **********************************    */
+    .overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image: "project/1.jpg";
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+    opacity:0.8;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+    font-family:cursive;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+/**************************************************/
+    
+/********************SLIDER************************/
+    
+    slider {
+ display: block;
+ width: 99%;
+ height: 600px;
+        left=0;
+        top=0;
+ background-color: ;
+ overflow: hidden;
+ position: absolute;
+        opacity:1;
+
+}
+
+slider > * {
+ position: absolute;
+ display: block;
+ width: 100%;
+ height: 100%;
+image-orientation:
+ background: ghostwhite;
+ animation: slide 12s infinite;
+ overflow: hidden;
+}
+
+slide:nth-child(1){
+ left: 0%;
+ animation-delay: -2s;
+ background-image: url(society/1.jpg);
+ background-size: cover;
+ background-position: center;
+}
+
+slide:nth-child(2){
+ animation-delay: 0s;
+ background-image: url(society/2.jpg);
+ background-size: cover;
+ background-position: center;
+}
+
+slide:nth-child(3){
+ animation-delay: 3s;
+ background-image: url(society/3.jpg);
+ background-size: cover;
+ background-position: center;
+}
+
+slide:nth-child(4){
+ animation-delay: 6s;
+ background-image: url(society/4.jpg);
+ background-size: cover;
+ background-position: center;
+}
+
+
+@keyframes slide {
+
+    0%{left:0px;}
+    10%{left:0px;}
+    20%{left:1200px;}
+    30%{left:1200px;}
+    40%{left:2400px;}
+    50%{left:2400px;}
+      60%{left:1200px;}
+    70%{left:1200px;}
+      80%{left:0px;}
+    90%{left:0px;}
+     100%{left:0px;}
+
+    
+}
+    
+/*****************************************************/
+    
+/************ Philosophy Box ***********************/ 
+    
+                .container_philosophy {
+                 
+	background-color: white;
+	border-radius: 50px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	width: 89%;
+	min-height: 80px;
+            margin-top:620px;
+            justify-content: center;
+            align-items: center;
+                 color:black;
+                 padding:20px 90px 20px 90px;
+                 
+                 background-image:url(covers/philosophy.jpg);
+                 background-size:cover;
+        }
+/****************************************************/
+    
+ /***************Customer-testimonials,News*********/   
+     .customer {
+        background-color: transparent;
+        background-size:cover;
+        left:0;
+        bottom:0;
+  width:100%;
+  min-height:350px;
+        opacity:0.9;
+        align-content: center;
+         margin-top:50px;
+         opacity:0.6;
+        
+}
+    
+
+.customercolumn {
+  width:49.4%;
+  background-image: url(covers/contain.png);
+    background-size:cover;
+  min-height:350px;
+  float:left;
+  margin:0 0;
+    border:2px solid white;
+    border-radius:10px;
+    
+}
+    
+/***********************************************/
+    
+/******************FOOTER***********************/
+
+     .stylefoot {
+        background-image:url(covers/footimage.jpg);
+        background-size:cover;
+        left:0;
+        bottom:0;
+  width:100%;
+  min-height:500px;
+        opacity:0.9;
+        align-content: center;
+        
+}
+
+.column {
+  width:25%;
+  background-color;
+  min-height:250px;
+  float:left;
+  margin:0 0;
+    
+}
+     .fa {
+  padding: 8px;
+  font-size: 20px;
+  width: 40px;
+        height:40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+        border-radius:50px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    background-color:black;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #AE1438;
+    color: white;}
+    
+/************************************************/
+    
+/***BOdy*********/
+body {
+  font-family: 'Lato', sans-serif;
+    background-size:100% 100%;
+    background-attachment:fixed;
+}
+
+    
+    h1
+    {
+        color:white;
+float: right;
+    margin-top:0;
+    font-family: cursive}
+    
+       h2
+    {
+        font-size: 40px;
+    margin-top:0;
+    font-family: cursive}
+    
+         h3
+    {
+        font-size: 30px;
+    margin-top:2px;
+    font-family: cursive;
+    font-style: italic;}
+    
+     p
+    {
+        font-size: 20px;
+    margin-top:0;
+    font-family: cursive}
+    
+/**********************************************/ 
+</style>
+</head>
+    
+<body background="society/3.jpg">
+
+    <h1> <img src=logo.jpg height=40px> NKSS Group</h1><BR>
+
+    <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+      <img src=logo.jpg height=100px>
+    <a href="plans.html">Overview</a>
+       <a href="contact.html">Contact</a>
+    <a href="celebrations.html">Events</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="#">Services</a>
+    <a href="login.html">Login</a>
+  </div>
+</div>
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+    </script>
+       <slider>
+  <slide></slide>
+  <slide></slide>
+  <slide></slide>
+  <slide></slide>
+ </slider>
+    
+    <div class="container_philosophy">
+    <h2 align="center">The Philosophy</h2>
+        <p>  NKSS is an advocate of the traditional values India has embraced. In other words we swear by THE 3 T's - Teamwork, Transparency, Tenacity Teamwork - People are NKSS's biggest assets. Customer experience and overall satisfaction through quality construction as well as employee contentment is a top priority. Transparency - Nkss works with a clean conscience and is cautiously transparent in all real estate dealings. Treating customers with utmost respect for the trust they have invested in NKSS is preciously nurtured. Tenacity - Fruit of the labour is a real concept, and NKSS abides by it wholly. Agility and a quick response towards needs of the customer while keeping them updated. </p>
+ </div>
+    
+    <div class="customer">
+         
+        <div class="customercolumn">
+          <h3 align="center"> Customer Testimonials</h3>
+          <div id = "slider"> 
+              <div id = "box">
+              <p>
+          <p><h3 align="center"><font color="white">With the alloted parking <BR> don't have to worry about<br> the safety of my car </h3></font>
+        <br><h3 align="right"> <font color="white"> -MUKTA SINGH </h3></font>
+      </p> 
+      <button class="prew"><</button>
+      <button class="next">></button>
+     
+    </div>
+ 
+</div>
+    
+</div>
+        
+      <div class="customercolumn"> 
+          <h3 align="center"> News</h3>
+          <br><br>
+          <div id="slider">
+          <p> <h3 align="center"><font color="white"> NKSS group to invest 400 crores in housing property in Ghaziabad </h3></font></p>
+          <button class="prew"><</button>
+          <button class="next">></button>
+          </div>
+            
+            </div>
+    </div>
+    <div class="customer">
+     <div class="customercolumn">
+          <h3 align="center"> Announcements</h3>
+          <div id="slider">
+              <p>
+                  <<h3 align="center"><font color="white">There will be a meeting of all<BR> the flat owners <br> on 30th august 2019 </h3></font>
+              </p>
+            <button class="prew"><</button>
+          <button class="next">></button></div></div>
+      <div class="customercolumn"> 
+          <h3 align="center"> Ratings</h3>
+          <br>
+          <div id="slider">
+              <p><h3 align="center"> <font color="white">Rated 5 star by <br> The National Builders Association <br> at International Meetup</p></h3></font> </p>     
+                <button class="prew"><</button> 
+                <button class="next">></button>
+        </div> </div> </div>
+    
+    <br><br><br><br>
+       <div class="stylefoot">
+        <div class="column">
+        <img src="logo.jpg" height=90px width=90px align="center">
+          <p> The Group is more than just a name in the Indian real estate market. While it connotes aspiration & growth for an individual, it is also the fulfilment of lifelong dreams for a family.
+              </p>
+     
+      </div>
+      <div class="column"></div>
+      <div class="column">
+      <h4>Contact Info</h4>
+          <p>Corporate Office / Site Sales, Vaibhav Khand, Indirapuram, Ghaziabad - 201014, UP</p>
+          <br>
+          
+      </div>
+
+      <div class="column">
+          <br>
+            <a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+            <br>
+            <a href="#" class="fa fa-linkedin"></a>
+<a  href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a>
+            </div>
+    </div>
+
+    <script type = "text/javascript">
+      var slider_content = document.getElementById('box');
+      var image = ['c','d','e','f'];
+      var i = image.length;
+      function nextImage(){
+          if(i< image.length){
+              i=i+1;
+          }
+          else{
+              i=1;
+          }
+          slider_content.innerHTML = "<img src="+image[i-1]+".jpg>";
+      }
+      function prewImage(){
+          if(i< image.length+1 && i>1){
+              i=i-1;
+          }
+          else{
+              i=image.length;
+          }
+          slider_content.innerHTML = "<img src="+image[i-1]+".jpg>";
+      }
+  </script>
+     
+</body>
+</html>
